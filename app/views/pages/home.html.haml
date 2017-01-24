@@ -1,0 +1,35 @@
+- content_for :title do
+  Главная
+- content_for :header do
+  .container
+    .jumbotron
+      %h1.display-4
+        %strong(style="font-weight:bold;") Fallacymania
+      %p.lead
+        /
+        Разоблачи софизм!
+        / Know your fallacy!
+        /
+          =link_to('Rails Composer', 'http://railsapps.github.io/rails-composer/')
+          from the #{link_to('RailsApps project', 'http://railsapps.github.io/')}.
+    %footer.footer(style="position:absolute;  " )
+      / вылезает за пределы джамботрона при уменьшении
+      %blockquote.blockquote(style="font-size: 0.85rem; color:white; width:50%; float:right;")
+        %p
+          Дело же знающего — каждый раз &hellip; говорить правду относительно того, что он знает, и уметь уличать лжеца.
+        %footer.blockquote-footer.text-warning
+          Аристотель,
+          %cite(title="О софистических опровержениях")О софистических опровержениях
+
+%section
+  %p.lead
+    Fallacymania &mdash;  игра про <em>софизмы.</em>  Софизмы это псевдоаргументы, которые намеренно используются в дискуссиях,
+    выступлениях, статьях и т. п. для введения оппонента в заблуждение или манипуляции аудиторией.
+
+  %p
+    Игра протекает в виде импровизированного и не очень серьёзного (а точнее, очень несерьёзного) спора,
+    в котором спорщики аргументируют свою позицию с помощью одних лишь софизмов. Группа отгадчиков в это же время
+    пытыется распознать софизмы, используемые спорщиками.
+
+  %p
+    В ходе игры участники приобретают навыки замечать и узнавать псевдоаргументы &mdash;  и не только в игровых ситуациях.

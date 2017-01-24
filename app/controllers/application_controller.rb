@@ -1,11 +1,14 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
+=begin
   before_action :show_flash
 
   private
 
   def show_flash
-    flash.now[:notice] = "Found the about page!" if request.path == '/pages/about'
+    flash.now[:notice] = "Found the root page!" if request.path == '/'
   end
+
+=end
 end

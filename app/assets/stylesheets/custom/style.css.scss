@@ -1,0 +1,14 @@
+@import "bootstrap-variables";
+.jumbotron {
+  background-image: asset-url('fallacymania-jumbo-image-38.png');
+  background-color: $gray-dark;
+  background-repeat:no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  overflow: hidden;
+  height: 400px;
+  color: white;
+
+}
+
