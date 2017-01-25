@@ -1,20 +1,19 @@
 - content_for :title do
   Главная
 - content_for :header do
-  .container
-    .jumbotron
-      %h1.display-4
-        %strong(style="font-weight:bold;") Fallacymania
-      %p.lead
-        /
-        Разоблачи софизм!
-        / Know your fallacy!
-        /
-          =link_to('Rails Composer', 'http://railsapps.github.io/rails-composer/')
-          from the #{link_to('RailsApps project', 'http://railsapps.github.io/')}.
+  .jumbotron.container
+    %h1.display-4
+      %strong(style="font-weight:bold;") Fallacymania
+    %p.lead
+      /
+      Разоблачи софизм!
+      / Know your fallacy!
+      /
+        =link_to('Rails Composer', 'http://railsapps.github.io/rails-composer/')
+        from the #{link_to('RailsApps project', 'http://railsapps.github.io/')}.
     %footer.footer(style="position:absolute;  " )
       / вылезает за пределы джамботрона при уменьшении
-      %blockquote.blockquote(style="font-size: 0.85rem; color:white; width:50%; float:right;")
+      %blockquote.blockquote(style="font-size: 0.92rem; color:white; width:50%; float:right;")
         %p
           Дело же знающего — каждый раз &hellip; говорить правду относительно того, что он знает, и уметь уличать лжеца.
         %footer.blockquote-footer.text-warning
