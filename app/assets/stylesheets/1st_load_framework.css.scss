@@ -3,17 +3,7 @@
 @import "bootstrap-variables";
 @import "bootstrap";
 
-.loolapa {
-  margin: $grid-gutter-width-base;
-}
 
-// both page footer and jumbotron footer
-.container > footer {
-  position: absolute;
-  bottom: 0;
-  left: $grid-gutter-width-base / 2;
-  right: $grid-gutter-width-base / 2;
-}
 // make all images responsive by default
 img {
   @extend .img-fluid;
@@ -48,12 +38,20 @@ img {
 // to make views framework-neutral
 main {
   @extend .container;
-  margin-top: 30px; // accommodate the navbar
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 section {
   @extend .row;
   margin-top: 20px;
+}
+
+body > footer {
+  @extend .container;
+  @extend .bg-inverse;
+  @extend .text-white;
+  height: 5rem;
 }
 
 @import "custom/style";
