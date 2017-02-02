@@ -29,7 +29,7 @@
 @include media-breakpoint-down(sm) {
   .jumbotron h1.display-4 {
     font-size: $display4-size * 0.618;
-    line-height: $display-line-height * 0.618;
+    line-height: $display-line-height;
 
   }
 
