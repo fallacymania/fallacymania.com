@@ -47,6 +47,10 @@ section {
   margin-top: 20px;
 }
 
+section > p {
+  @extend .col-12;
+}
+
 body > footer {
   @extend .container;
   @extend .bg-inverse;
