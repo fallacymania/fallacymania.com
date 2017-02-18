@@ -1,0 +1,35 @@
+- content_for :title do
+  Fallacymania &mdash; Загрузки
+- content_for :header do
+  .jumbotron.container
+    %h1.display-3
+      Загрузки
+
+%section
+  %h2 Правила игры, лист и карточки софизмов
+  %p
+    Здесь можно скачать игровые материалы и изготовить с их помощью комплект для игры.<br>
+    Разрешается копирование, модификация и распространение в соответствии с условиям лицензии CC BY-NC 4.0.
+
+  %table.table.table-responsive.table-bordered
+    %thead
+      %tr
+        %th Материалы
+        %th Авторство
+
+    %tbody
+      %tr
+        %td
+          %a(href="http://gdurl.com/z6s0A/download")Правила игры
+        %td
+          %small &copy; Александр Попов, Юрий Баранов  2014&ndash;2017
+      %tr
+        %td
+          %a(href="http://gdurl.com/TqXL/download")Лист с софизмами <br/>
+          %a(href="https://drive.google.com/uc?id=0BzyKVqP6n3hKNXZjaVAyZ05NODA")Наклейки на карты
+        %td
+          %small
+            &copy; Александр Попов, Юрий Баранов, Алина Горбатова, 2014&ndash;2017 на основе произведений
+            <br> David Mcandless, Jesse Richardson, и Александра Образа.<br>
+            Подробнее об
+            = link_to 'источниках и внесенных изменениях', page_path('about', anchor: 'upstream-attribution')
