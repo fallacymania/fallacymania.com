@@ -45,7 +45,7 @@
 // @param {String} $search - Substring to replace
 // @param {String} $replace ('') - New value
 // @return {String} - Updated string
-@function str-replace($string, $search, $replace: "") {
+//@function str-replace($string, $search, $replace: "") {
 //   $index: str-index($string, $search);
 
 //   @if $index {
@@ -53,15 +53,15 @@
 //   }
 
 //   @return $string;
-}
+//}
 
-@mixin _assert-starts-at-zero($map) {
+//@mixin _assert-starts-at-zero($map) {
 //   $values: map-values($map);
 //   $first-value: nth($values, 1);
 //   @if $first-value != 0 {
 //     @warn "First breakpoint in `$grid-breakpoints` must start at 0, but starts at #{$first-value}.";
 //   }
-}
+//}
 
 
 // General variable structure
@@ -185,14 +185,14 @@
 // Define the minimum dimensions at which your layout will change,
 // adapting to different screen sizes, for use in media queries.
 
- $grid-breakpoints: (
-   xs: 0,
-   sm: 576px,
-   md: 768px,
-   lg: 992px,
-   xl: 1200px
- );
-@include _assert-starts-at-zero($grid-breakpoints);
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px
+// );
+//@include _assert-starts-at-zero($grid-breakpoints);
 
 
 // Grid containers
