@@ -89,6 +89,7 @@
  $gray-dark:                 #292b2c !global;
  $gray:                      #464a4c;
  $gray-light:                #636c72;
+ $gray-medium:               #bcc3c6;
  $gray-lighter:              #eceeef;
  $gray-lightest:             #f7f7f9;
 
@@ -619,6 +620,8 @@
 // $nav-tabs-border-width:                       $border-width;
 // $nav-tabs-border-radius:                      $border-radius;
 // $nav-tabs-link-hover-border-color:            $gray-lighter;
+$nav-tabs-active-link-hover-border-color:     $gray-medium;
+
 // $nav-tabs-active-link-hover-color:            $gray;
 // $nav-tabs-active-link-hover-bg:               $body-bg;
 // $nav-tabs-active-link-hover-border-color:     #ddd;
