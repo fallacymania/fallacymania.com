@@ -16,6 +16,10 @@
 
   Alina Gorbatova for proofreading and enthusiastic support
 
+  Vyacheslav "berekuk" Matyukhin for careful corrective contributions
+
+  Alexander "alarik" Biderman for original photo content
+
   Daniel Kehoe (@rails_apps) for the RailsApps project
 
 /* SITE */
