@@ -14,26 +14,29 @@
         %ul
           %li
             у наших друзей в московском антикафе
-            = link_to '«Кочерга».', 'http://kocherga-club.ru', title: 'ул.Большая Дорогомиловская, д.5 к.2'
+            = link_to '«Кочерга».', 'http://kocherga-club.ru', title: 'ул.Большая Дорогомиловская, д.5 к.2',
+            target: :_blank
             Виртуальный прилавок Кочерги c игрой
             = link_to 'здесь.',  'https://vk.com/kocherga_club?w=product-99973027_632856',
-            title: 'Информация о продаже Fallacimaniи через Кочергу во ВКонтакте'
+            title: 'Информация о продаже Fallacimania через Кочергу во ВКонтакте',
+            target: :_blank
 
           %li
             В интернет-магазине
-            = link_to '«Игротайм».', 'https://www.igrotime.ru/fallacymania.html'
+            = link_to '«Игротайм».', 'https://www.igrotime.ru/fallacymania.html',
+            target: :_blank
             Есть доставка по РФ.
       %li
         Можно
         = link_to 'скачать', page_path('downloads'), title: 'Загрузки'
         игровые материалы, распечатать и изготовить  комплект для настольной игры самостоятельно.
       %li
-        Можно поиграть с друзьями в Интернете с помощью программы Tabletop Simulator на платформе   Steam&reg;:
+        Можно поиграть с друзьями в Интернете с помощью программы Tabletop Simulator на платформе Steam&reg;:
         %ul.list-unstyled
           %li
-            %a( href="http://steamcommunity.com/sharedfiles/filedetails/?id=723926088") русская версия
+            %a( href="http://steamcommunity.com/sharedfiles/filedetails/?id=723926088" target="_blank") русская версия
           %li
-            %a( href="http://steamcommunity.com/sharedfiles/filedetails/?id=723941480") английская версия
+            %a( href="http://steamcommunity.com/sharedfiles/filedetails/?id=723941480" target="_blank") английская версия
 
 %section
   %h2 Fallacymania &mdash; правила игры
