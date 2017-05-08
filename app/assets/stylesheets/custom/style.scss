@@ -11,7 +11,6 @@
 
 }
 
-
 .jumbotron > footer {
   position: absolute;
   bottom: 0;
@@ -19,12 +18,35 @@
   right: $grid-gutter-width-base / 2;
 }
 
+#home .jumbotron {
+  height: 25rem;
+  background-position: left top;
+  background-image: asset-url('bg-home.jpg')
+}
+
+#game .jumbotron {
+  height: 25rem;
+  background-position: left top;
+  background-image: asset-url('bg-game.jpg')
+}
+
 #buy .jumbotron {
   height: 40rem;
   background-position: left top;
-  background-image: asset-url('fallacymania-in-kocherga-38.png')
+  background-image: asset-url('bg-buy.png')
 }
 
+#downloads .jumbotron {
+  height: 25rem;
+  background-position: left top;
+  background-image: asset-url('bg-downloads.jpg')
+}
+
+#about .jumbotron {
+  height: 25rem;
+  background-position: left top;
+  background-image: asset-url('bg-about.jpg')
+}
 
 @include media-breakpoint-down(sm) {
   .jumbotron h1.display-4 {
