@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.4.0'
-gem 'rails', '~> 5.0.2'
+gem 'rails', '~> 5.1.4'
 gem 'sqlite3'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
@@ -25,7 +25,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '4.0.0.alpha6' #TODO upgrade to beta
 gem 'high_voltage'
 group :development do
   gem 'better_errors'
