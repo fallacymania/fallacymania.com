@@ -83,4 +83,16 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+
+  #CORS for fallacymania jekyll-based blog contact me
+  config.middleware.insert_before 0, Rack::Cors do
+    allow do
+      origins 'fallacymania.github.io', 'blog.fallacymania.com'
+      resource %r{/mail/contact_me([.]json)?},
+               headers: :any,
+               methods: :post
+    end
+  end
+
 end
