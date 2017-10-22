@@ -11,6 +11,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'haml'
 
+gem 'elastic_email_rails'
+
 gem 'dotenv-rails'
 gem 'rack-cors'
 
