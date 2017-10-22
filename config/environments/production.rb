@@ -95,7 +95,7 @@ Rails.application.configure do
   #CORS for fallacymania jekyll-based blog contact me
   config.middleware.insert_before 0, Rack::Cors do
     allow do
-      origins 'fallacymania.github.io', 'blog.fallacymania.com'
+      origins 'https://fallacymania.github.io', 'blog.fallacymania.com'
       resource %r{/mail/contact_me([.]json)?},
                headers: :any,
                methods: :post
