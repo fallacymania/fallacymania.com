@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock "3.8.0"
+lock "3.9.1"
 
 set :application, "fallacymania.com"
 set :repo_url, "git@github.com:fallacymania/fallacymania.com.git"
