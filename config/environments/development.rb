@@ -1,6 +1,6 @@
 Rails.application.configure do
+  config.read_encrypted_secrets = true
   # Settings specified here will take precedence over those in config/application.rb.
-
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
@@ -51,4 +51,22 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+
+  config.action_mailer.delivery_method = :elastic_email
+  config.action_mailer.elastic_email_settings = {
+      api_key: Rails.application.secrets.ELASTIC_EMAIL_API_KEY,
+      username:  Rails.application.secrets.ELASTIC_EMAIL_USERNAME
+  }
+
+  #CORS for blog contact me
+  config.middleware.insert_before 0, Rack::Cors do
+    allow do
+      origins 'localhost:4000'
+      resource %r{/mail/contact_me([.]json)?},
+               headers: :any,
+               methods: :post
+    end
+  end
+
 end

@@ -83,4 +83,21 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_mailer.delivery_method = :elastic_email
+  config.action_mailer.elastic_email_settings = {
+      api_key: Rails.application.secrets.ELASTIC_EMAIL_API_KEY,
+      username:  Rails.application.secrets.ELASTIC_EMAIL_USERNAME
+  }
+
+  #CORS for fallacymania jekyll-based blog contact me
+  config.middleware.insert_before 0, Rack::Cors do
+    allow do
+      origins 'fallacymania.github.io', 'blog.fallacymania.com'
+      resource %r{/mail/contact_me([.]json)?},
+               headers: :any,
+               methods: :post
+    end
+  end
+
 end

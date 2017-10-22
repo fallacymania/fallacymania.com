@@ -86,3 +86,6 @@ pickle-email-*.html
 /README.textile
 /.ruby-version
 /.ruby-gemset
+
+# Ignore encrypted secrets key file.
+config/secrets.yml.key

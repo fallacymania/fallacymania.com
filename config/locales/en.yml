@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+  contact_form_mailer:
+    contact_us:
+      subject: 'Website Contact Form: %{name}'
