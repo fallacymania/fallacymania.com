@@ -11,4 +11,8 @@
       %ul.navbar-nav.mr-auto.nav-tabs
         = render 'layouts/navigation_links'
       %ul.navbar-nav.ml-auto.nav-tabs
-        %li.nav-item= link_to 'Блог', '/blog', class: 'nav-link'
+        %li.nav-item
+          = link_to  '/blog', class: 'nav-link' do
+            Блог
+            %sup.badge.badge-pill.badge-success новость!
+
