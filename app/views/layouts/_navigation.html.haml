@@ -12,7 +12,7 @@
         = render 'layouts/navigation_links'
       %ul.navbar-nav.ml-auto.nav-tabs
         %li.nav-item
-          = link_to  '/blog', class: 'nav-link' do
+          = link_to  '/blog', class: 'nav-link', data: {turbolinks: false} do
             Блог
             %sup.badge.badge-pill.badge-success новость!
 
