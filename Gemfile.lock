@@ -108,7 +108,7 @@ GEM
     ffi (1.9.18)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
-    haml (5.0.3)
+    haml (5.0.4)
       temple (>= 0.8.0)
       tilt
     high_voltage (3.0.0)
@@ -276,7 +276,7 @@ DEPENDENCIES
   elastic_email_rails
   factory_girl_rails
   faker
-  haml
+  haml (>= 5.0.4)
   high_voltage
   html2haml
   jbuilder (~> 2.5)
