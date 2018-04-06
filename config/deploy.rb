@@ -13,7 +13,8 @@ set :deploy_to, "/var/www/#{fetch(:application)}"
 set :deploy_user, "deploy"
 
 
-set :bundle_flags, '--deployment' #debuggin bundle output
+# UNCOMMENT NEXT LINE FOR DEBUGGING bundle output in case of problems
+# set :bundle_flags, '--deployment'
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
