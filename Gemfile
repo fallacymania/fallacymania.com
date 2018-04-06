@@ -16,6 +16,8 @@ gem 'elastic_email_rails'
 gem 'dotenv-rails'
 gem 'rack-cors'
 
+gem 'loofah', '>= 2.2.1'
+
 # gem 'haml-rails'
 group :development, :test do
   gem 'byebug', platform: :mri
