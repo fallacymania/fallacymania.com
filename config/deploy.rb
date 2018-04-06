@@ -12,6 +12,9 @@ set :repo_url, "git@github.com:fallacymania/fallacymania.com.git"
 set :deploy_to, "/var/www/#{fetch(:application)}"
 set :deploy_user, "deploy"
 
+
+set :bundle_flags, '--deployment' #debuggin bundle output
+
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
@@ -28,6 +31,8 @@ append :linked_files, '.env.production', 'db/production.sqlite3', 'config/secret
 
 # Default value for linked_dirs is []
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
+
+append :linked_dirs, '.bundle'
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
