@@ -8,7 +8,7 @@ Bundler.require(*Rails.groups)
 
 module RailsBootstrap
   class Application < Rails::Application
-
+    config.active_record.sqlite3.represent_boolean_as_integer = true
     config.generators do |g|
       g.test_framework :rspec,
         fixtures: true,

@@ -1,16 +1,16 @@
 source 'https://rubygems.org'
 ruby '2.5.5'
-gem 'rails', '~> 5.1.4'
+gem 'rails', '~> 5.2.6'
 gem 'sqlite3'
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 4.3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'haml', '>= 5.0.4'
-
+gem 'haml', '>= 5.0.14'
+gem 'nokogiri', '~> 1.12.5'
 gem 'elastic_email_rails'
 
 gem 'dotenv-rails'
@@ -50,8 +50,8 @@ group :development, :test do
   gem 'rspec-rails'
 end
 group :test do
-  gem 'capybara'
+  gem 'capybara', '~> 2.15'
   gem 'database_cleaner'
   gem 'launchy'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '~> 3'
 end
