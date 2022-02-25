@@ -18,6 +18,9 @@ gem 'rack-cors'
 
 gem 'loofah', '>= 2.2.1'
 
+gem 'listen', '~> 3.0.5'
+
+
 # gem 'haml-rails'
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -25,7 +28,6 @@ end
 group :development do
   gem 'html2haml'
   gem 'web-console'
-  gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'execjs', '~> 2.7.0'
