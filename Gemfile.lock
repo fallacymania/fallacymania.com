@@ -106,7 +106,7 @@ GEM
       actionmailer (>= 3.2.13)
     erubi (1.10.0)
     erubis (2.7.0)
-    execjs (2.8.1)
+    execjs (2.7.0)
     factory_girl (4.9.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.9.0)
@@ -289,6 +289,7 @@ DEPENDENCIES
   dotenv-rails
   ed25519 (>= 1.0, < 2.0)
   elastic_email_rails
+  execjs (~> 2.7.0)
   factory_girl_rails
   faker
   haml (>= 5.0.14)
