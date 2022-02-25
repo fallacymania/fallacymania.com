@@ -10,6 +10,8 @@
     = csrf_meta_tags
   %body{:class=> body_class, :id => body_id}
     %header
+      .justify-content-end.align-items-center.d-flex.flex-row
+        = image_tag('nowar.jpg', alt: 'Нет войне!', title: 'Разработчики сайта выступают за немедленное прекращение путинской вооруженной агрессии против Украины')
       = render 'layouts/navigation'
       = yield :header
       = render 'layouts/messages'

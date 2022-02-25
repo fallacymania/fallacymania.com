@@ -186,8 +186,6 @@ GEM
       ffi (>= 0.5.0, < 2)
     rbnacl (4.0.2)
       ffi
-    rbnacl-libsodium (1.0.16)
-      rbnacl (>= 3.0.1)
     rspec-core (3.6.0)
       rspec-support (~> 3.6.0)
     rspec-expectations (3.6.0)
@@ -295,7 +293,6 @@ DEPENDENCIES
   rails (~> 5.1.4)
   rails_layout
   rbnacl (>= 3.2, < 5.0)
-  rbnacl-libsodium
   rspec-rails
   sass-rails (~> 5.0)
   selenium-webdriver
